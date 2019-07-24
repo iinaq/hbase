@@ -28,7 +28,8 @@ public class HbaseUtil {
 
     static {
         conf = HBaseConfiguration.create();
-        conf.set("hbase.rootdir","hdfs://localhost:9000/hbase");
+//        conf.set("hbase.rootdir","hdfs://localhost:9000/hbase");
+        conf.set("hbase.rootdir","hdfs://100.0.100.1:9000/hbase");
         conf.set("hbase.zookeeper.quorum", "100.0.100.1,100.0.100.2,100.0.100.3");
         conf.set("hbase.zookeeper.property.clientPort", "2181");
         conf.set("hbase.master", "100.0.100.1:16010");
